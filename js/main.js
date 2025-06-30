@@ -10,13 +10,14 @@ window.addEventListener('scroll', function () {
     }
 });
 
-function backToTopBtn() {
+
+function scrollToTop() {
     const currentPosition = window.scrollY || document.documentElement.scrollTop;
 
     if (currentPosition > 0) {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth'  
+            behavior: 'smooth'
         });
     }
 }
