@@ -10,7 +10,7 @@ window.addEventListener('scroll', function () {
     }
 });
 
-function scrollToTop() {
+function backToTopBtn() {
     const currentPosition = window.scrollY || document.documentElement.scrollTop;
 
     if (currentPosition > 0) {
