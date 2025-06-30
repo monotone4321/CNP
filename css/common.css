@@ -1,0 +1,64 @@
+.flex-type01{display: flex; justify-content: space-between;}
+.flex-type02{display: flex; justify-content: flex-start;}
+.flex-type03{display: flex; justify-content: flex-end;}
+.blind{position: absolute; left: -9999px; font-size: 0;}
+.center{max-width: 1200px; margin: 0 auto; position: relative;}
+
+/* Common */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul,ol,li{list-style: none;}
+a{color: #333; text-decoration: none; cursor: pointer;}
+a:link, a:hover, a:active, a:focus {text-decoration: none; cursor: pointer; color: #333;}
+html{font-size: 10px; overflow-y: scroll;}
+body{word-break: keep-all; color: #333; font-size: 1.3rem; 
+    font-family: 'Pretendard', sans-serif; background-color: #fff;}
+
+input, textarea, button, select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+/* @font-face {
+    font-family: 'Pretendard-Black';
+    src: url(/font/Pretendard-Black.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url(/font/Pretendard-Bold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url(/font/Pretendard-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url(/font/Pretendard-Light.ttf);
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url(/font/Pretendard-Thin.ttf);
+    font-weight: 100;
+    font-style: normal;
+} */
+
+
+
+img{border: 0 none; max-width: 100%;}
+img, input, select, textarea{vertical-align: middle;}
+button, label{cursor: pointer; border:  none; padding: 0;}

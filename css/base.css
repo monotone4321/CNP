@@ -1,0 +1,161 @@
+html { font-size: 10px; }
+.inner { max-width: 1440px; width: 100%; margin: 0 auto; padding: 0 20px; }
+
+
+/* top버튼 */
+#btn-back-to-top{width: 40px; height: 40px; background-color: rgba(0, 0, 0, 0.1);
+border-radius: 50%; position: fixed; bottom: 48px; right: 10px;
+line-height: 40px; text-align: center; z-index: 999;}
+#btn-back-to-top a{display: block; width: 100%; height: 100%;}
+#btn-back-to-top:hover{
+    background-color: rgba(0, 0, 0, 0.4); transition: all 0.5s ease;
+}
+#btn-back-to-top>i{color: #fff;}
+/* 메인 */
+.main { height: auto; position: relative; overflow: hidden; }
+.main .main-bg-img { display: block; width: 100%; height: auto; }
+.triangle { width: 100%; height: 100%; background-color: #02224e; position: absolute; z-index: 1; top: 0; left: 0; clip-path: polygon(0 0, 50% 0, 0 100%); }
+.main .logo { width: 180px; position: absolute; z-index: 2; top: 100px; left: 100px; }
+.main h4, .main p { position: absolute; z-index: 2; color: #fff; }
+.main h4 { font-size: 4rem; top: 200px; left: 10%; }
+.main p { font-size: 2rem; top: 260px; left: 18%; }
+.main p:nth-of-type(2) { top: 300px; left: 5%; }
+/* 스크롤유도아이콘 */
+.btn-motion4, .btn-motion4:before { position: absolute; left: 50%; }
+.btn-motion4 { width: 30px; height: 50px; z-index: 3; bottom: 0; box-shadow: inset 0 0 0 1px #999; border-radius: 25px; }
+.btn-motion4:before { content: ""; width: 8px; height: 8px; background: #999; margin-left: -4px; top: 8px; border-radius: 4px;  animation: btn-motion4 1.5s ease-in-out infinite; }
+@keyframes btn-motion4 {
+    0% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(46px); }
+}
+/* 카테고리버튼 */
+.category-btn {  height: 200px; border-radius: 200px; background-color: #02224e; margin: 100px 20px 0; padding: 60px 200px; display: flex; }
+.category-btn .About { width: 20%; display: flex; align-items: center; }
+.category-btn .About h1 { font-size: 3rem; font-weight: 700; color: #fff; }
+.category-btn .threeD { width: 80%; }
+.category-btn .threeD .threeDfirst, .category-btn .threeD .threeDsecond { width: 100%; height: 50%; align-items: center; display: flex; font-size: 2rem; color: #fff; font-weight: 600; }
+.category-btn .threeD .threeDfirst ul, .category-btn .threeD .threeDsecond ul { width: 60%; height: 100%; display: flex; justify-content: space-between; align-items: center; margin-left: 100px; }
+.category-btn .threeD .threeDfirst ul li, .category-btn .threeD .threeDsecond ul li { width: 100%; height: 100%; position: relative; }
+.category-btn .threeD .threeDfirst ul li::before, .category-btn .threeD .threeDsecond ul li::before { content: ""; width: 2px; height: 20px; background-color: #fff; position: absolute; top: 50%; transform: translateY(-50%);}
+.category-btn .threeD .threeDfirst ul li:first-child:before, .category-btn .threeD .threeDsecond ul li:first-child:before { content: ""; display: none;}
+.category-btn .threeD .threeDfirst ul li a, .category-btn .threeD .threeDsecond ul li a { display: inline-block; width: 100%; height: 100%; padding: 10px; color: #fff; text-align: center; font-size: 1.6rem; font-weight: 100; }
+.category-btn .threeD .threeDfirst ul li a:hover, .category-btn .threeD .threeDsecond ul li a:hover { color: #999; transition: all .4s; font-weight: 400; }
+/* 인트로인사 */
+.intro { margin-top: 100px; width: 100%; }
+.intro .intro-text { font-size: 2.4rem; text-align: center; }
+.intro ul { display: flex; width: 100%; align-items: center; justify-content: center; margin-top: 30px; }
+.intro ul li:first-child p { font-weight: 900; margin-right: 20px; }
+.intro ul li p { font-size: 2.4rem; }
+.intro ul li img { display: inline-block; width: 100px; padding-left: 10px; }
+/* companyinfo */
+.companyinfo{ width: 100%; display: flex; margin-top: 100px; }
+.companyinfo .tit { width: 60%; }
+.companyinfo .tit h1 { font-size: 4rem; font-weight: 900; }
+.companyinfo .text { width: 40%; }
+.companyinfo .text ul li { height: 72px; display: flex; align-items: center; border-bottom: 1px solid #d1d1d1; }
+.companyinfo .text ul li > p { width: 100px; font-size: 1.8rem; color: #999; padding-left: 10px; }
+.companyinfo .text ul li > span { font-size: 2rem; font-weight: 600; }
+/* history */
+.history { width: 100%; margin-top: 100px; }
+.history .inner .tit { margin-bottom: 30px; }
+.history .inner .tit h1 { font-size: 4rem; font-weight: 900; }
+/* biz */
+.biz { width: 100%; margin-top: 100px; }
+.biz .tit { margin-bottom: 30px; }
+.biz .tit h1 { font-size: 3rem; font-weight: 900; }
+.biz .cont ul { display: flex; justify-content: space-between; }
+.biz .cont ul li { width: calc(100% / 3 - 10px); display: flex; flex-direction: column; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); border-radius: 50px; overflow: hidden; }
+.biz .cont ul li .text { padding: 30px; }
+.biz .cont ul li > div { overflow: hidden; }
+.biz .cont ul li > div > img { display: block; transition: all .5s ease-in-out; transform: scale(1); }
+.biz .cont ul li > div:hover > img { transform: scale(1.3); }
+.biz .cont ul li .text > h6 { font-size: 2rem; margin-bottom: 10px; }
+.biz .cont ul li .text > p { font-size: 1.6rem; }
+/* product */
+.product { display: flex; margin-top: 100px; }
+.product .tit { width: 20%; }
+.product .tit > h1 { font-size: 3rem; font-weight: 900; }
+.product .cont { width: 80%; }
+.product .cont .cont-text { font-size: 1.8rem; padding: 10px 0 0 0; display: block; }
+.product .cont ul { border-radius: 50px; }
+.product .cont ul li { display: flex; padding: 30px 0 0 0; overflow: hidden; } 
+.product .cont ul li:first-child { padding: 0; }
+.product .cont ul li > .text { width: 50%; display: flex; flex-direction: column; justify-content: center; padding: 30px; border-radius: 0 50px 50px 0; border-top: 1px solid #999; border-right: 1px solid #999; border-bottom: 1px solid #999; border-left: none; }
+.product .cont ul li > .text > h4 { font-size: 2.8rem; }
+.product .cont ul li > .text > p { font-size: 1.8rem; padding: 5px 0; }
+.product .cont ul li > .text > p > span { font-size: 1.6rem; color: #999; }
+/* swiper */
+.swiper { width: 50%; overflow: hidden; border-radius: 50px 0 0 50px; margin-left: 0 !important; margin-right: 0 !important; }
+.swiper-wrapper { height: 100%; }
+.swiper-slide { height: 100%; display: flex; justify-content: center; align-items: center; }
+.swiper-slide img { display: block; width: 100%; }
+.swiper-button-next, .swiper-button-prev { width: 24px !important; height: 24px !important; background-size: 10px 10px !important; color: #fff !important; }
+.swiper-button-next::after, .swiper-button-prev::after { font-size: 24px !important; }
+/* tsystem */
+.tsystem .tit { margin-top: 100px; }
+.tsystem .tit h1 { font-size: 3rem; font-weight: 900; }
+.tsystem .cont { display: flex; margin-top: 30px; }
+.tsystem .cont .img { width: 60%; height: 300px; border-radius: 50px 0 0 50px; overflow: hidden; }
+.tsystem .cont .img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tsystem .cont .text { width: 40%; height: 300px; padding: 10px 50px; }
+.tsystem .cont .text ul { height: 100%; display: flex; flex-direction: column; justify-content: center; }
+.tsystem .cont .text ul li { width: 100%; }
+.tsystem .cont .text ul li p { font-size: 2rem; padding: 10px 0; }
+/* patent */
+.patent .tit { margin-top: 100px; margin-bottom: 30px; }
+.patent .tit h1 { font-size: 3rem; font-family: 900; }
+.patent ul { display: flex; }
+/* toge */
+.toge { display: flex; flex-wrap: wrap; margin-top: 100px; }
+.toge .tit { width: 30%; }
+.toge .tit h1 { font-size: 3rem; font-weight: 900; }
+.toge .cont { width: 70%; }
+.toge .cont img { display: block; max-height: 100%; object-fit: contain; }
+/* bizplan */
+.bizplan { margin-top: 100px; }
+.bizplan .tit { margin-bottom: 30px; }
+.bizplan .tit h1 { font-size: 3rem; font-weight: 900; }
+.bizplan .pet { background-image: url(../images/petastic_main.jpg); background-size: cover; height: auto; border-radius: 50px; overflow: hidden; }
+.bizplan .respect { background-image: url(../images/resfactfoot.jpg); background-size: cover; height: auto; border-radius: 50px; overflow: hidden; margin-top: 30px; }
+.bizplan .design { background-image: url(../images/designbg.jpg); background-size: cover; height: auto; border-radius: 50px; overflow: hidden; margin-top: 30px; }
+.bizplan .sourcing { background-image: url(../images/sourcing.jpg); background-size: cover; height: auto; border-radius: 50px; overflow: hidden; margin-top: 30px; }
+.bizplan .pet ul { display: flex; width: 70%; justify-content: space-between; padding: 100px; }
+.bizplan .respect ul { display: flex; width: 100%; justify-content: space-between; padding: 100px; }
+.bizplan .design ul { display: flex; width: 100%; justify-content: space-between; padding: 50px 100px; }
+.bizplan .sourcing ul { display: flex; width: 100%; justify-content: space-between; padding: 100px; }
+.bizplan .pet ul li:first-child, .bizplan .respect ul li:first-child { display: flex; align-items: center; }
+.bizplan .respect ul li:first-child { width: 340px; }
+.bizplan .design ul li:first-child h3 { font-size: 3rem; font-weight: 900; color: #fff; }
+.bizplan .sourcing ul li:first-child h3 { font-size: 2.6rem; color: #fff; }
+.bizplan .design ul li:first-child, .bizplan .sourcing ul li:first-child { display: flex; align-items: center; }
+.bizplan .pet ul li p, .bizplan .respect ul li p, .bizplan .design ul li p, .bizplan .sourcing ul li p { font-size: 2rem; color: #fff; text-align: right; letter-spacing: 2px; line-height: 1.5; }
+/* Out */
+.Out { margin-top: 100px; }
+.Out .group { display: flex; justify-content: space-between; margin-bottom: 30px; }
+.Out .group div h1 { font-size: 4rem; font-weight: 900; }
+.Out .group div p { font-size: 2rem; }
+.Out .group div span { font-size: 2rem; font-weight: 600; }
+.Out ul { display: flex; justify-content: space-between; }
+.Out ul li { width: calc(100% / 6 - 10px); border-radius: 30px; overflow: hidden; }
+/* Design */
+.Design { margin-top: 100px; }
+.Design .group { display: flex; justify-content: space-between; margin-bottom: 30px; }
+.Design .group div h1 { font-size: 4rem; font-weight: 900; }
+.Design .group div p { font-size: 2rem; }
+.Design .group div span { font-size: 2rem; font-weight: 600; }
+.Design ul { display: flex; justify-content: space-between; }
+.Design ul li { width: calc(100% / 5 - 10px); border-radius: 30px; overflow: hidden; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); }
+/* Contact */
+.Contact{ width: 100%; display: flex; margin-top: 100px; margin-bottom: 150px; }
+.Contact .tit { width: 60%; }
+.Contact .tit h1 { font-size: 4rem; font-weight: 900; }
+.Contact .text { width: 40%; }
+.Contact .text ul li { height: 72px; display: flex; align-items: center; border-bottom: 1px solid #d1d1d1; }
+.Contact .text ul li > p { width: 100px; font-size: 1.8rem; color: #999; padding-left: 10px; }
+.Contact .text ul li > span { font-size: 2rem; font-weight: 600; }
+/* footer */
+footer { background-color: #02224e; padding: 100px 0; }
+footer .inner h1 { width: 150px; }
+footer .inner ul { margin-top: 30px; }
+footer .inner ul li { display: flex; margin-top: 10px; gap: 20px; }
+footer .inner ul li p { font-size: 1.2rem; color: #d1d1d1; font-weight: 100; }

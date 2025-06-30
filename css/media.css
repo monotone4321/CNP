@@ -1,0 +1,169 @@
+@media (max-width:1440px){
+/* 메인 */
+.triangle { width: 340px; clip-path: none;}
+.main .logo { left: 40px; }
+.main h4 { font-size: 2.6rem; left: 40px; }
+.main p { font-size: 1.6rem; left: 40px; }
+.main p:nth-of-type(2) { left: 40px; }
+/* 카테고리버튼 */
+.category-btn { height: auto; padding: 30px 60px; flex-wrap: wrap; }
+.category-btn .About { width: 100%; justify-content: center; margin-bottom: 10px; }
+.category-btn .About h1 { font-size: 2.6rem; }
+.category-btn .threeD { width: 100%; }
+.category-btn .threeD .threeDfirst, .category-btn .threeD .threeDsecond { justify-content: center; font-size: 1.6rem; }
+.category-btn .threeD .threeDsecond ul { margin-left: 127px; }
+/* 인트로인사 */
+.intro .intro-text { font-size: 2rem; }
+.intro ul li p { font-size: 1.8rem; }
+.intro ul li img { width: 60px; padding-left: 5px; }
+/* companyinfo */
+.companyinfo .tit { width: 40%; }
+.companyinfo .text { width: 60%; }
+/* product */
+.product { flex-wrap: wrap; }
+.product .tit { width: 100%; margin-bottom: 30px; }
+.product .cont { width: 100%; }
+.product .cont ul li > .text { width: 40%; padding: 10px; }
+.product .cont ul li > .text > h4 { font-size: 2.4rem; }
+.product .cont ul li > .text > p { font-size: 1.6rem; }
+.product .cont ul li > .text > span { font-size: 1.4rem; }
+/* swiper */
+.swiper { width: 60%; }
+/* tsystem */
+.tsystem .cont .text ul li p { font-size: 1.6rem; text-align: center; }
+/* patent */
+.patent ul { flex-wrap: wrap; }
+.patent ul li { width: calc(100%/4); }
+/* toge */
+.toge { flex-wrap: wrap; flex-direction: column; }
+.toge .tit { width: 100%; margin-bottom: 30px; }
+.toge .tit h1 { font-size: 3rem; }
+.toge .cont { width: 100%; }
+.toge .cont img { width: 100%; }
+/* bizplan */
+.bizplan .pet ul { width: 100%; }
+.bizplan .pet ul, .bizplan .respect ul, .bizplan .design ul, .bizplan .sourcing ul { flex-wrap: wrap; gap: 30px; padding: 50px; }
+.bizplan .respect ul { justify-content: center; }
+.bizplan .pet ul li, .bizplan .respect ul li:first-child, .bizplan .design ul li, .bizplan .sourcing ul li { width: 100%; justify-content: center; }
+.bizplan .design ul li:first-child h3 { font-size: 2rem; text-align: center; }
+.bizplan .sourcing ul li:first-child h3 { font-size: 2rem; text-align: center; }
+.bizplan .pet ul li p, .bizplan .respect ul li p, .bizplan .design ul li p, .bizplan .sourcing ul li p { font-size: 1.6rem; text-align: center; }
+/* Out */
+.Out .group { flex-wrap: wrap; }
+.Out .group div { width: 100%; }
+.Out .group div h1 { margin-bottom: 30px; }
+.Out .group div p { font-size: 1.6rem; }
+.Out .group div span { font-size: 1.6rem; }
+.Out ul { flex-wrap: wrap; gap: 10px; justify-content: flex-start; }
+.Out ul li { width: calc(100% / 4 - 10px); }
+/* Design */
+.Design .group { flex-wrap: wrap; }
+.Design .group div { width: 100%; }
+.Design .group div h1 { margin-bottom: 30px; }
+.Design .group div p { font-size: 1.6rem; }
+.Design .group div span { font-size: 1.6rem; }
+.Design ul { flex-wrap: wrap; gap: 10px; justify-content: flex-start; }
+.Design ul li { width: calc(100% / 4 - 10px); }
+/* Contact */
+.Contact .tit { width: 40%; }
+.Contact .text { width: 60%; }
+/* footer */
+footer .inner h1 { width: 120px; }
+footer .inner ul li { flex-wrap: wrap; }
+}
+
+
+@media (max-width:768px){
+/* 메인 */
+.main .logo { top: 40px; left: 40px; }
+.main h4 { font-size: 2rem; top: 140px; }
+.main p { font-size: 1.4rem; top: 180px; }
+.main p:nth-of-type(2) { top: 220px; }
+/* 카테고리버튼 */
+.category-btn .threeD .threeDfirst, .category-btn .threeD .threeDsecond { flex-wrap: wrap; }
+.category-btn .threeD .threeDfirst ul, .category-btn .threeD .threeDsecond ul { width: 100%; height: auto; margin: 10px 0; }
+.category-btn .threeD .threeDfirst ul li, .category-btn .threeD .threeDsecond ul li { height: auto; }
+.category-btn .threeD .threeDfirst ul li::before, .category-btn .threeD .threeDsecond ul li::before { top: 40%; transform: translateY(-40%);}
+/* 인트로인사 */
+.intro .intro-text { font-size: 1.8rem; }
+.intro ul li p { font-size: 1.6rem; }
+.intro ul li img { width: 50px; }
+/* companyinfo */
+.companyinfo { flex-wrap: wrap; }
+.companyinfo .tit { width: 100%; margin-bottom: 20px; }
+.companyinfo .tit h1 { font-size: 3rem; }
+.companyinfo .text { width: 100%; }
+.companyinfo .text ul li > p { width: 70px; font-size: 1.4rem; }
+.companyinfo .text ul li > span { font-size: 1.6rem; padding: 20px; }
+/* history */
+.history .inner .tit h1 { font-size: 3rem; }
+/* biz */
+.biz .tit h1 { font-size: 2.2rem; }
+.biz .cont ul { flex-wrap: wrap; gap: 30px; }
+.biz .cont ul li { width: 100%; }  
+/* product */
+.product .tit > h1 { font-size: 2.2rem; }
+.product .cont ul li { flex-wrap: wrap; } 
+.product .cont ul li > .text { width: 100%; padding: 30px; border-radius: 0 0 50px 50px; border-top: none; border-left: 1px solid #999; }
+/* swiper */
+.swiper { width: 100%; border-radius: 50px 50px 0 0; }
+/* tsystem */
+.tsystem .tit h1 { font-size: 2.2rem; }
+.tsystem .cont { flex-wrap: wrap; }
+.tsystem .cont .img { width: 100%; border-radius: 50px 50px 0 0; }
+.tsystem .cont .text { width: 100%; height: auto; padding: 20px; }
+/* patent */
+.patent .tit h1 { font-size: 2.2rem; }
+/* toge */
+.toge .tit h1 { font-size: 2.2rem; }
+/* bizplan */
+.bizplan .tit h1 { font-size: 2.2rem }
+/* Out */
+.Out .group div h1 { font-size: 3rem; }
+.Out ul li { width: calc(100% / 3 - 10px); }
+/* Design */
+.Design .group div h1 { font-size: 3rem; }
+.Design ul li { width: calc(100% / 3 - 10px); }
+/* Contact */
+.Contact { flex-wrap: wrap; }
+.Contact .tit { width: 100%; margin-bottom: 20px; }
+.Contact .tit h1 { font-size: 3rem; }
+.Contact .text { width: 100%; }
+.Contact .text ul li > p { width: 70px; font-size: 1.4rem; }
+.Contact .text ul li > span { font-size: 1.6rem; padding: 20px; }
+}
+
+
+@media (max-width:576px){
+/* 메인 */
+.triangle { width: 260px; }
+.main .logo { width: 100px; top: 20px; left: 20px; }
+.main h4 { font-size: 1.6rem; top: 80px; left: 20px; }
+.main p { font-size: 1.4rem; top: 120px; left: 20px; }
+.main p:nth-of-type(2) { top: 160px; left: 20px; }
+.btn-motion4 { display: none; }
+/* 카테고리버튼 */
+.category-btn { border-radius: 0; padding: 30px; margin: 0; }
+.category-btn .About h1 { font-size: 2rem; }
+.category-btn .threeD .threeDfirst ul li a, .category-btn .threeD .threeDsecond ul li a { font-size: 1.4rem; }
+/* 인트로인사 */
+.intro .intro-text { font-size: 1.6rem; }
+.intro ul li p { font-size: 1.4rem; }
+.intro ul li img { width: 40px; }
+/* biz */
+.biz .cont ul li .text > h6 { font-size: 1.6rem; }
+.biz .cont ul li .text > p { font-size: 1.4rem; }
+/* product */
+.product .cont ul li > .text > h4 { font-size: 1.8rem; }
+.product .cont ul li > .text > p { font-size: 1.4rem; }
+.product .cont ul li > .text > p > span { font-size: 1.3rem; }
+.product .cont .cont-text { font-size: 1.3rem; text-align: center; }
+/* tsystem */
+.tsystem .cont .img { height: 200px; }
+/* patent */
+.patent ul li { width: calc(100%/2); }
+/* Out */
+.Out ul li { width: calc(100% / 2 - 10px); }
+/* Design */
+.Design ul li { width: calc(100% / 2 - 10px); }
+}
