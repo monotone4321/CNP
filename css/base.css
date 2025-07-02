@@ -17,9 +17,9 @@ line-height: 40px; text-align: center; z-index: 999;}
 .triangle { width: 100%; height: 100%; background-color: #02224e; position: absolute; z-index: 1; top: 0; left: 0; clip-path: polygon(0 0, 50% 0, 0 100%); }
 .main .logo { width: 180px; position: absolute; z-index: 2; top: 100px; left: 100px; }
 .main h4, .main p { position: absolute; z-index: 2; color: #fff; }
-.main h4 { font-size: 4rem; top: 200px; left: 10%; }
-.main p { font-size: 2rem; top: 260px; left: 18%; }
-.main p:nth-of-type(2) { top: 300px; left: 5%; }
+.main h4 { font-size: 3.8rem; top: 200px; left: 100px; }
+.main p { font-size: 2rem; top: 260px; left: 100px; }
+.main p:nth-of-type(2) { top: 300px; left: 100px; }
 /* 스크롤유도아이콘 */
 .btn-motion4, .btn-motion4:before { position: absolute; left: 50%; }
 .btn-motion4 { width: 30px; height: 50px; z-index: 3; bottom: 0; box-shadow: inset 0 0 0 1px #999; border-radius: 25px; }
@@ -33,7 +33,7 @@ line-height: 40px; text-align: center; z-index: 999;}
 .category-btn .About { width: 20%; display: flex; align-items: center; }
 .category-btn .About h1 { font-size: 3rem; font-weight: 700; color: #fff; }
 .category-btn .threeD { width: 80%; }
-.category-btn .threeD .threeDfirst, .category-btn .threeD .threeDsecond { width: 100%; height: 50%; align-items: center; display: flex; font-size: 2rem; color: #fff; font-weight: 600; }
+.category-btn .threeD .threeDfirst, .category-btn .threeD .threeDsecond { width: 100%; height: 50%; align-items: center; justify-content: flex-end; display: flex; font-size: 2rem; color: #fff; font-weight: 600; }
 .category-btn .threeD .threeDfirst ul, .category-btn .threeD .threeDsecond ul { width: 60%; height: 100%; display: flex; justify-content: space-between; align-items: center; margin-left: 100px; }
 .category-btn .threeD .threeDfirst ul li, .category-btn .threeD .threeDsecond ul li { width: 100%; height: 100%; position: relative; }
 .category-btn .threeD .threeDfirst ul li::before, .category-btn .threeD .threeDsecond ul li::before { content: ""; width: 2px; height: 20px; background-color: #fff; position: absolute; top: 50%; transform: translateY(-50%);}
@@ -42,8 +42,9 @@ line-height: 40px; text-align: center; z-index: 999;}
 .category-btn .threeD .threeDfirst ul li a:hover, .category-btn .threeD .threeDsecond ul li a:hover { color: #999; transition: all .4s; font-weight: 400; }
 /* 인트로인사 */
 .intro { margin-top: 100px; width: 100%; }
-.intro .intro-text { font-size: 2.4rem; text-align: center; }
-.intro ul { display: flex; width: 100%; align-items: center; justify-content: center; margin-top: 30px; }
+.intro .intro-text { font-size: 2.4rem; line-height: 1.4; text-align: center; }
+.intro .intro-text span { display: inline-block; margin-bottom: 20px; }
+.intro ul { display: flex; width: 100%; align-items: center; justify-content: center; margin-top: 60px; }
 .intro ul li:first-child p { font-weight: 900; margin-right: 20px; }
 .intro ul li p { font-size: 2.4rem; }
 .intro ul li img { display: inline-block; width: 100px; padding-left: 10px; }
@@ -55,6 +56,11 @@ line-height: 40px; text-align: center; z-index: 999;}
 .companyinfo .text ul li { height: 72px; display: flex; align-items: center; border-bottom: 1px solid #d1d1d1; }
 .companyinfo .text ul li > p { width: 100px; font-size: 1.8rem; color: #999; padding-left: 10px; }
 .companyinfo .text ul li > span { font-size: 2rem; font-weight: 600; }
+/* companygroup */
+.companygroup { width: 100%; display: flex; flex-wrap: wrap; margin-top: 100px; }
+.companygroup .tit { width: 30%; }
+.companygroup .tit h1 { font-size: 3rem; font-weight: 900; }
+.companygroup .img { width: 70%; }
 /* history */
 .history { width: 100%; margin-top: 100px; }
 .history .inner .tit { margin-bottom: 30px; }
@@ -64,7 +70,7 @@ line-height: 40px; text-align: center; z-index: 999;}
 .biz .tit { margin-bottom: 30px; }
 .biz .tit h1 { font-size: 3rem; font-weight: 900; }
 .biz .cont ul { display: flex; justify-content: space-between; }
-.biz .cont ul li { width: calc(100% / 3 - 10px); display: flex; flex-direction: column; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); border-radius: 50px; overflow: hidden; }
+.biz .cont ul li { width: calc(100% / 3 - 10px); display: flex; flex-direction: column; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); border-radius: 16px; overflow: hidden; }
 .biz .cont ul li .text { padding: 30px; }
 .biz .cont ul li > div { overflow: hidden; }
 .biz .cont ul li > div > img { display: block; transition: all .5s ease-in-out; transform: scale(1); }
@@ -80,12 +86,12 @@ line-height: 40px; text-align: center; z-index: 999;}
 .product .cont ul { border-radius: 50px; }
 .product .cont ul li { display: flex; padding: 30px 0 0 0; overflow: hidden; } 
 .product .cont ul li:first-child { padding: 0; }
-.product .cont ul li > .text { width: 50%; display: flex; flex-direction: column; justify-content: center; padding: 30px; border-radius: 0 50px 50px 0; border-top: 1px solid #999; border-right: 1px solid #999; border-bottom: 1px solid #999; border-left: none; }
+.product .cont ul li > .text { width: 50%; display: flex; flex-direction: column; justify-content: center; padding: 30px; }
 .product .cont ul li > .text > h4 { font-size: 2.8rem; }
 .product .cont ul li > .text > p { font-size: 1.8rem; padding: 5px 0; }
 .product .cont ul li > .text > p > span { font-size: 1.6rem; color: #999; }
 /* swiper */
-.swiper { width: 50%; overflow: hidden; border-radius: 50px 0 0 50px; margin-left: 0 !important; margin-right: 0 !important; }
+.swiper { width: 50%; overflow: hidden; border-radius: 16px 0 0 16px; margin-left: 0 !important; margin-right: 0 !important; }
 .swiper-wrapper { height: 100%; }
 .swiper-slide { height: 100%; display: flex; justify-content: center; align-items: center; }
 .swiper-slide img { display: block; width: 100%; }
@@ -95,7 +101,7 @@ line-height: 40px; text-align: center; z-index: 999;}
 .tsystem .tit { margin-top: 100px; }
 .tsystem .tit h1 { font-size: 3rem; font-weight: 900; }
 .tsystem .cont { display: flex; margin-top: 30px; }
-.tsystem .cont .img { width: 60%; height: 300px; border-radius: 50px 0 0 50px; overflow: hidden; }
+.tsystem .cont .img { width: 60%; height: 300px; border-radius: 16px 0 0 16px; overflow: hidden; }
 .tsystem .cont .img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .tsystem .cont .text { width: 40%; height: 300px; padding: 10px 50px; }
 .tsystem .cont .text ul { height: 100%; display: flex; flex-direction: column; justify-content: center; }
@@ -115,10 +121,10 @@ line-height: 40px; text-align: center; z-index: 999;}
 .bizplan { margin-top: 100px; }
 .bizplan .tit { margin-bottom: 30px; }
 .bizplan .tit h1 { font-size: 3rem; font-weight: 900; }
-.bizplan .pet { background-image: url(../images/petastic_main.jpg); background-size: cover; height: auto; border-radius: 50px; overflow: hidden; }
-.bizplan .respect { background-image: url(../images/resfactfoot.jpg); background-size: cover; height: auto; border-radius: 50px; overflow: hidden; margin-top: 30px; }
-.bizplan .design { background-image: url(../images/designbg.jpg); background-size: cover; height: auto; border-radius: 50px; overflow: hidden; margin-top: 30px; }
-.bizplan .sourcing { background-image: url(../images/sourcing.jpg); background-size: cover; height: auto; border-radius: 50px; overflow: hidden; margin-top: 30px; }
+.bizplan .pet { background-image: url(../images/petastic_main.jpg); background-size: cover; height: auto; border-radius: 16px; overflow: hidden; }
+.bizplan .respect { background-image: url(../images/resfactfoot.jpg); background-size: cover; height: auto; border-radius: 16px; overflow: hidden; margin-top: 30px; }
+.bizplan .design { background-image: url(../images/designbg.jpg); background-size: cover; height: auto; border-radius: 16px; overflow: hidden; margin-top: 30px; }
+.bizplan .sourcing { background-image: url(../images/sourcing.jpg); background-size: cover; height: auto; border-radius: 16px; overflow: hidden; margin-top: 30px; }
 .bizplan .pet ul { display: flex; width: 70%; justify-content: space-between; padding: 100px; }
 .bizplan .respect ul { display: flex; width: 100%; justify-content: space-between; padding: 100px; }
 .bizplan .design ul { display: flex; width: 100%; justify-content: space-between; padding: 50px 100px; }
@@ -133,16 +139,16 @@ line-height: 40px; text-align: center; z-index: 999;}
 .Out { margin-top: 100px; }
 .Out .group { display: flex; justify-content: space-between; margin-bottom: 30px; }
 .Out .group div h1 { font-size: 4rem; font-weight: 900; }
-.Out .group div p { font-size: 2rem; }
-.Out .group div span { font-size: 2rem; font-weight: 600; }
+.Out .group div p { font-size: 2rem; line-height: 1.4; }
+.Out .group div span { font-size: 2rem; font-weight: 600; line-height: 1.4; }
 .Out ul { display: flex; justify-content: space-between; }
 .Out ul li { width: calc(100% / 6 - 10px); border-radius: 30px; overflow: hidden; }
 /* Design */
 .Design { margin-top: 100px; }
 .Design .group { display: flex; justify-content: space-between; margin-bottom: 30px; }
 .Design .group div h1 { font-size: 4rem; font-weight: 900; }
-.Design .group div p { font-size: 2rem; }
-.Design .group div span { font-size: 2rem; font-weight: 600; }
+.Design .group div p { font-size: 2rem; line-height: 1.4; }
+.Design .group div span { font-size: 2rem; font-weight: 600; line-height: 1.4; }
 .Design ul { display: flex; justify-content: space-between; }
 .Design ul li { width: calc(100% / 5 - 10px); border-radius: 30px; overflow: hidden; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); }
 /* Contact */

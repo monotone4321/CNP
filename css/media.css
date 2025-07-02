@@ -95,6 +95,10 @@ footer .inner ul li { flex-wrap: wrap; }
 .companyinfo .text { width: 100%; }
 .companyinfo .text ul li > p { width: 70px; font-size: 1.4rem; }
 .companyinfo .text ul li > span { font-size: 1.6rem; padding: 20px; }
+/* companygroup */
+.companygroup .tit { width: 100%; margin-bottom: 30px; }
+.companygroup .tit h1 { font-size: 2.2rem; }
+.companygroup .img { width: 100%; }
 /* history */
 .history .inner .tit h1 { font-size: 3rem; }
 /* biz */
