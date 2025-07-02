@@ -142,7 +142,7 @@ line-height: 40px; text-align: center; z-index: 999;}
 .Out .group div p { font-size: 2rem; line-height: 1.4; }
 .Out .group div span { font-size: 2rem; font-weight: 600; line-height: 1.4; }
 .Out ul { display: flex; justify-content: space-between; }
-.Out ul li { width: calc(100% / 6 - 10px); border-radius: 30px; overflow: hidden; }
+.Out ul li { width: calc(100% / 6 - 10px); border-radius: 16px; overflow: hidden; }
 /* Design */
 .Design { margin-top: 100px; }
 .Design .group { display: flex; justify-content: space-between; margin-bottom: 30px; }
@@ -150,7 +150,7 @@ line-height: 40px; text-align: center; z-index: 999;}
 .Design .group div p { font-size: 2rem; line-height: 1.4; }
 .Design .group div span { font-size: 2rem; font-weight: 600; line-height: 1.4; }
 .Design ul { display: flex; justify-content: space-between; }
-.Design ul li { width: calc(100% / 5 - 10px); border-radius: 30px; overflow: hidden; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); }
+.Design ul li { width: calc(100% / 5 - 10px); border-radius: 16px; overflow: hidden; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); }
 /* Contact */
 .Contact{ width: 100%; display: flex; margin-top: 100px; margin-bottom: 150px; }
 .Contact .tit { width: 60%; }
